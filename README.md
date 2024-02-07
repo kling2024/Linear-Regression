@@ -75,7 +75,7 @@ The gradient descent algorithm is:
 $$\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \ & w := w -  \alpha \frac{\partial J(w,b)}{\partial w} \newline       \& b := b -  \alpha \frac{\partial J(w,b)}{\partial b}; & 
 \newline & \rbrace\end{align*}$$
 
-Where, parameters $w, b$ are both updated simultaniously and where  
+Where, parameters $w, b$ are both updated simultaneously and where  
 
 $$
 \frac{\partial J(w,b)}{\partial w}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) -y^{(i)})x^{(i)}
