@@ -72,13 +72,15 @@ Here, I implemented a function named `compute_cost()`to calculate the cost $J(w,
 
 The gradient descent algorithm is:
 
-$$\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \; & \phantom {0000} w := w -  \alpha \frac{\partial J(w,b)}{\partial w} \newline       \; & \phantom {0000} b := b -  \alpha \frac{\partial J(w,b)}{\partial b}; & 
+$$\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \ & w := w -  \alpha \frac{\partial J(w,b)}{\partial w} \newline       \& b := b -  \alpha \frac{\partial J(w,b)}{\partial b}; & 
 \newline & \rbrace\end{align*}$$
 
 Where, parameters $w, b$ are both updated simultaniously and where  
+
 $$
 \frac{\partial J(w,b)}{\partial w}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) -y^{(i)})x^{(i)}
 $$
+
 $$
 \frac{\partial J(w,b)}{\partial b}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})
 $$
